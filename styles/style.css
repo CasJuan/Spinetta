@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oi&family=Sulphur+Point:wght@300;400;700&display=swap');
+
+body {
+    background-image: url(../img/flaco2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Oi', serif;
+    color: #FAF4EA;
+}
