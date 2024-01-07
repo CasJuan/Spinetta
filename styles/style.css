@@ -4,7 +4,7 @@
 :root{
     --color-verde: #37A148;
     --color-pastel: #FAF4EA;
-    --colore-amarillo: #EDEC76;
+    --color-amarillo: #EDEC76;
 }
 
 *{
@@ -18,12 +18,12 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position-x: center;
-    color: #FAF4EA;
+    color: var(--color-pastel);
 }
 
 main{
     background: #13111185;
-    color: #FAF4EA;
+    color: var(--color-pastel);
     width: 50%;
     margin: 0;
     margin-left: auto;
@@ -44,19 +44,26 @@ h1{
     color: var(--color-pastel);
 }
 
+ol li{
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 35px;
+    color: var(--color-pastel);
+}
+
+ol li a{
+    text-align: left;
+    color: var(--color-amarillo);
+    font-style: italic;
+}
+
+
 .edad{
     font-size: 1.5rem;
     font-family: 'Oi', serif;
     font-weight: 100;
     color: var(--color-verde);
     text-align: center;
-}
-
-h2{
-    font-size: 2rem;
-    text-align: center;
-    font-weight: 100;
-    color: var(--color-pastel);
 }
 
 section{
@@ -69,31 +76,35 @@ section{
     transition: all 0.7s;
 }
 
+.mostrarArriba {
+    animation: mostrarArriba 1s;
+}
+
 section h2{
     font-size: 2rem;
     margin: 5px;
     text-align: center;
-    font-weight: 100;
+    font-weight: bold;
     color: var(--color-verde);
     font-family: 'Abel', sans-serif;
     text-decoration-line: underline ;
     text-decoration-color: var(--color-pastel);
 }
 
-.quien{
-    border: 1px solid var(--colore-amarillo);
+.who{
+    border: 1px solid var(--color-amarillo);
 }
 
-.quien p{
+.who p{
     font-size: 1.5rem;
     text-align: left;
     line-height: 35px;
 }
 
-.bandas ol li{
-    font-size: 1.5rem;
-    text-align: left;
-    line-height: 35px;
+.who img{
+    margin: 20px;
+    width: 500px;
+    border-radius: 25px;
 }
 
 .bandas ol li span{
@@ -103,29 +114,15 @@ section h2{
 }
 
 .fecha{
-    color: var(--colore-amarillo);
+    color: var(--color-amarillo);
 }
 
-.valore{
-    border: 1px solid var(--colore-amarillo);
+.valora{
+    border: 1px solid var(--color-amarillo);
 }
 
-.valore ol {
+.valora ol {
     margin: 20px;
-}
-
-.valore ol li {
-    font-size: 1.5rem;
-    text-align: left;
-    line-height: 35px;
-    color: var(--color-pastel);
-}
-
-.valore ol li a{
-    text-align: left;
-    /* text-decoration: none; */
-    color: var(--colore-amarillo);
-    font-style: italic;
 }
 
 .disco h4{
@@ -156,19 +153,6 @@ section h2{
     margin: 20px;
 }
 
-.disco ol li {
-    font-size: 1.5rem;
-    text-align: left;
-    line-height: 35px;
-    color: var(--color-pastel);
-}
-
-.disco ol li a{
-    text-align: left;
-    color: var(--colore-amarillo);
-    font-style: italic;
-}
-
 .btn{
     display: flex;
     flex-direction: row;
@@ -177,7 +161,7 @@ section h2{
     border-radius: 20px;
     width: 200px;
     height: 50px;
-    background-color: var(--colore-amarillo);
+    background-color: var(--color-amarillo);
     cursor: pointer;
 }
 
@@ -198,7 +182,7 @@ section h2{
     font-size: 1.5rem;
     text-align: left;
     line-height: 35px;
-    border: 1px solid var(--colore-amarillo);
+    border: 1px solid var(--color-amarillo);
 }
 
 .footer h5{
@@ -238,10 +222,6 @@ table tbody tr:nth-of-type(even){
 table tbody tr:last-of-type{
     border-bottom: 2px solid #EDEC76;
 
-}
-
-.mostrarArriba {
-    animation: mostrarArriba 1s;
 }
 
 @keyframes mostrarArriba{
