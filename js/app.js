@@ -8,6 +8,7 @@ function mostrarContet () {
 
         if(alturaAnimada - 400 < scrollTop){
             animado[i].style.opacity = 1;
+            animado[i].classList.add("mostrarArriba");
         }
     }
 }
